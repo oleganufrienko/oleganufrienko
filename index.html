@@ -4,346 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ануфриенко Олег Дмитриевич - Product Lead/CPO</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Фавиконка -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/resume.png">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    body {
-        background-color: #f8f9fa;
-        color: #333;
-        line-height: 1.6;
-    }
-    
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    
-    header {
-        background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
-        color: white;
-        padding: 40px 20px;
-        border-radius: 0 0 15px 15px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* === СТИЛИ ДЛЯ ФОТО И ЗАГОЛОВКА === */
-    .header-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 40px;
-    }
-    
-    .profile-photo {
-        margin-right: 40px;
-        flex-shrink: 0;
-    }
-
-    .photo {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .photo:hover {
-        transform: scale(1.03);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    }
-    /* === КОНЕЦ СТИЛЕЙ ДЛЯ ФОТО === */
-    
-    .profile-info h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .profile-info h2 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        margin-bottom: 20px;
-        color: #e8eaf6;
-    }
-    
-    .contact-info {
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 15px;
-    }
-    
-    .contact-info p {
-        margin-bottom: 8px;
-        display: flex;
-        align-items: center;
-    }
-    
-    .contact-info i {
-        margin-right: 10px;
-        width: 20px;
-    }
-    
-    .contact-info a {
-        color: #c5cae9;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-    
-    .contact-info a:hover {
-        color: white;
-        text-decoration: underline;
-    }
-    
-    section {
-        background-color: white;
-        border-radius: 10px;
-        padding: 30px;
-        margin: 30px 0;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    }
-    
-    section h2 {
-        color: #1a237e;
-        border-bottom: 2px solid #e8eaf6;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        font-size: 1.8rem;
-    }
-    
-    .job {
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
-    }
-    
-    .job:last-child {
-        border-bottom: none;
-    }
-    
-    .job-header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-    }
-    
-    .job-title {
-        font-weight: bold;
-        color: #283593;
-        font-size: 1.2rem;
-    }
-    
-    .job-period {
-        color: #666;
-        font-style: italic;
-    }
-    
-    .job-company {
-        color: #1a237e;
-        font-weight: 600;
-        margin-bottom: 5px;
-    }
-    
-    .job-achievements {
-        margin-top: 15px;
-        padding-left: 20px;
-    }
-    
-    .job-achievements li {
-        margin-bottom: 8px;
-    }
-    
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 15px;
-        margin-top: 20px;
-    }
-    
-    .skill-category {
-        background-color: #f5f5f5;
-        padding: 15px;
-        border-radius: 8px;
-    }
-    
-    .skill-category h3 {
-        color: #1a237e;
-        margin-bottom: 10px;
-        font-size: 1.1rem;
-    }
-    
-    .education-item {
-        margin-bottom: 20px;
-        padding: 15px;
-        background-color: #f8f9fa;
-        border-radius: 8px;
-    }
-    
-    .education-year {
-        display: inline-block;
-        background-color: #1a237e;
-        color: white;
-        padding: 3px 10px;
-        border-radius: 4px;
-        font-size: 0.9rem;
-        margin-bottom: 8px;
-    }
-    
-    .language-level {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-    
-    .language-name {
-        font-weight: 600;
-    }
-    
-    .level-bar {
-        height: 8px;
-        background-color: #e0e0e0;
-        border-radius: 4px;
-        margin-top: 5px;
-        overflow: hidden;
-    }
-    
-    .level-fill {
-        height: 100%;
-        background-color: #283593;
-    }
-    
-    .about-me {
-        font-style: italic;
-        color: #555;
-        line-height: 1.8;
-    }
-    
-    .highlight {
-        color: #1a237e;
-        font-weight: 600;
-    }
-    
-    footer {
-        text-align: center;
-        padding: 20px;
-        color: #666;
-        font-size: 0.9rem;
-        border-top: 1px solid #eee;
-        margin-top: 40px;
-    }
-    
-    /* ======================================== */
-    /* АДАПТИВНЫЕ СТИЛИ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ */
-    /* ======================================== */
-    
-    @media (max-width: 768px) {
-        .header-content {
-            flex-direction: column;
-            text-align: center;
-            gap: 25px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
-        .profile-photo {
-            margin-right: 0;
-            margin-bottom: 15px;
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
         }
         
-        .profile-info h1 {
-            font-size: 2rem;
-        }
-        
-        .contact-info {
-            margin-top: 20px;
-            width: 100%;
-        }
-        
-        section {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
         
-        .job-header {
-            flex-direction: column;
+        header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        
-        .job-period {
-            margin-top: 5px;
-        }
-        
-        .photo {
-            width: 160px;
-            height: 160px;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .photo {
-            width: 140px;
-            height: 140px;
-        }
-        
-        .profile-info h1 {
-            font-size: 1.8rem;
-        }
-        
-        .profile-info h2 {
-            font-size: 1.3rem;
-        }
-        
-        .contact-info {
-            padding: 15px;
-        }
-        
-        section h2 {
-            font-size: 1.5rem;
-        }
-        
-        .skills-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
-        
-        <header>
-    <div class="container">
-        <div class="header-content">
-            <!-- ФОТО ДОБАВЛЯЕТСЯ ЗДЕСЬ -->
-            <div class="profile-photo">
-                <img src="https://via.placeholder.com/200x200/1a237e/ffffff?text=OA" 
-                     alt="Ануфриенко Олег Дмитриевич" 
-                     class="photo">
-            </div>
-            
-            <div class="profile-info">
-                <h1>Ануфриенко Олег Дмитриевич</h1>
-                <h2>Product Lead / CPO</h2>
-                <div class="contact-info">
-                    <p><i class="fas fa-phone"></i> +7 (926) 396-55-73</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:oleg.anufriyenko@phystech.edu">oleg.anufriyenko@phystech.edu</a></p>
-                    <p><i class="fab fa-telegram"></i> <a href="https://t.me/odanufrienko" target="_blank">Telegram: @odanufrienko</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
-                    <p><i class="fas fa-briefcase"></i> Готов к редким командировкам</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
         
         .header-content {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
             align-items: center;
+            gap: 40px;
+        }
+        
+        .profile-photo {
+            flex-shrink: 0;
+        }
+
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
         .profile-info h1 {
@@ -525,31 +238,32 @@
             margin-top: 40px;
         }
         
+        /* Адаптивность */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 text-align: center;
+                gap: 25px;
             }
             
             .profile-info h1 {
                 font-size: 2rem;
             }
             
-            .contact-info {
-                margin-top: 20px;
-                width: 100%;
+            .photo {
+                width: 160px;
+                height: 160px;
             }
             
             section {
                 padding: 20px;
             }
-            
-            .job-header {
-                flex-direction: column;
-            }
-            
-            .job-period {
-                margin-top: 5px;
+        }
+        
+        @media (max-width: 480px) {
+            .photo {
+                width: 140px;
+                height: 140px;
             }
         }
     </style>
@@ -558,6 +272,12 @@
     <header>
         <div class="container">
             <div class="header-content">
+                <div class="profile-photo">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="Ануфриенко Олег Дмитриевич" 
+                         class="photo">
+                </div>
+                
                 <div class="profile-info">
                     <h1>Ануфриенко Олег Дмитриевич</h1>
                     <h2>Product Lead / CPO</h2>
