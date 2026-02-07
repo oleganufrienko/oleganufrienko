@@ -7,6 +7,109 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* СТИЛИ ДЛЯ ФОТОГРАФИИ */
+.profile-photo {
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Обновляем стили для header-content */
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* меняем с space-between */
+    align-items: center;
+    gap: 40px;
+}
+/* Адаптивные размеры фото */
+@media (max-width: 1024px) {
+    .photo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo {
+        width: 160px;
+        height: 160px;
+        border-width: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Для печати (чтобы фото не занимало много чернил) */
+@media print {
+    .photo {
+        filter: grayscale(100%);
+        border: 2px solid #ccc;
+    }
+}
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    /* Градиентная обводка */
+    padding: 5px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* Тень */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+    /* Анимация */
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+}
+
+@media (max-width: 480px) {
+    .photo {
+        width: 140px;
+        height: 140px;
+    }
+}
         * {
             margin: 0;
             padding: 0;
@@ -26,13 +129,30 @@
             padding: 20px;
         }
         
-        header {
-            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
-            color: white;
-            padding: 40px 20px;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
+        <header>
+    <div class="container">
+        <div class="header-content">
+            <!-- ФОТО ДОБАВЛЯЕТСЯ ЗДЕСЬ -->
+            <div class="profile-photo">
+                <img src="https://via.placeholder.com/200x200/1a237e/ffffff?text=OA" 
+                     alt="Ануфриенко Олег Дмитриевич" 
+                     class="photo">
+            </div>
+            
+            <div class="profile-info">
+                <h1>Ануфриенко Олег Дмитриевич</h1>
+                <h2>Product Lead / CPO</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +7 (926) 396-55-73</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:oleg.anufriyenko@phystech.edu">oleg.anufriyenko@phystech.edu</a></p>
+                    <p><i class="fab fa-telegram"></i> <a href="https://t.me/odanufrienko" target="_blank">Telegram: @odanufrienko</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
+                    <p><i class="fas fa-briefcase"></i> Готов к редким командировкам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
         
         .header-content {
             display: flex;
