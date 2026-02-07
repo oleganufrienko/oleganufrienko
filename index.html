@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ануфриенко Олег Дмитриевич - Product Lead/CPO</title>
+    
+    <!-- Фавиконка -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/resume.png">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         * {
             margin: 0;
@@ -37,7 +43,26 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+        }
+        
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .profile-photo-container {
+            flex-shrink: 0;
+            margin-left: 40px;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
         .profile-info h1 {
@@ -219,19 +244,26 @@
             margin-top: 40px;
         }
         
+        /* Адаптивность */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 text-align: center;
             }
             
+            .profile-photo-container {
+                margin-left: 0;
+                margin-bottom: 25px;
+                order: -1;
+            }
+            
             .profile-info h1 {
                 font-size: 2rem;
             }
             
-            .contact-info {
-                margin-top: 20px;
-                width: 100%;
+            .profile-photo {
+                width: 160px;
+                height: 160px;
             }
             
             section {
@@ -244,6 +276,33 @@
             
             .job-period {
                 margin-top: 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .profile-info h1 {
+                font-size: 1.8rem;
+            }
+            
+            .profile-info h2 {
+                font-size: 1.3rem;
+            }
+            
+            .contact-info {
+                padding: 15px;
+            }
+            
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -262,6 +321,13 @@
                         <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
                         <p><i class="fas fa-briefcase"></i> Готов к редким командировкам</p>
                     </div>
+                </div>
+                
+                <div class="profile-photo-container">
+                    <!-- ВАШЕ РЕАЛЬНОЕ ФОТО -->
+                    <img src="images/photo.jpg" 
+                         alt="Ануфриенко Олег Дмитриевич" 
+                         class="profile-photo">
                 </div>
             </div>
         </div>
