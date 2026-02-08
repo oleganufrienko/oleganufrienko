@@ -5,7 +5,7 @@
 ## Контакты
 - Email: oleg.anufriyenko@phystech.edu
 - Telegram: @odanufrienko
-- Сайт: https://ваш-username.github.io
+- Сайт: https://oleganufrienko.github.io/oleganufrienko/
 
 ## Технологии
 - HTML5, CSS3
