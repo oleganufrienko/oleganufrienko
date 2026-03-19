@@ -3,517 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Резюме Ануфриенко Олега - Product Lead / CPO с опытом 8+ лет в IT, AI и продуктовом менеджменте">
-    <meta name="keywords" content="резюме, product manager, CPO, Москва, AI, Sber, продуктовая разработка">
-    <meta name="author" content="Ануфриенко Олег Дмитриевич">
-    <title>Ануфриенко Олег Дмитриевич - Product Lead/CPO</title>
-    
-    <!-- Фавиконка -->
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/resume.png">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Олег Ануфриенко — Product Lead / CPO</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
-            color: white;
-            padding: 40px 20px;
-            border-radius: 0 0 15px 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        
-        .profile-info {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .profile-photo-container {
-            flex-shrink: 0;
-            margin-left: 40px;
         }
 
-        .profile-photo {
-            width: 180px;
-            height: 180px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9fafc;
+            color: #1e293b;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+            padding: 48px 56px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 32px 20px;
+            }
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .header-left {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .header-right {
+            flex-shrink: 0;
+        }
+
+        .header-right img {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 3px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-        
-        .profile-info h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+
+        @media (max-width: 640px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-right img {
+                width: 100px;
+                height: 100px;
+            }
         }
-        
-        .profile-info h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            margin-bottom: 20px;
-            color: #e8eaf6;
-        }
-        
-        .contact-info {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 15px;
-        }
-        
-        .contact-info p {
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .contact-info i {
-            margin-right: 10px;
-            width: 20px;
-        }
-        
-        .contact-info a {
-            color: #c5cae9;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .contact-info a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-        
-        section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            margin: 30px 0;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-        }
-        
-        section h2 {
-            color: #1a237e;
-            border-bottom: 2px solid #e8eaf6;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-        
-        .job {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .job:last-child {
-            border-bottom: none;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            color: #283593;
-            font-size: 1.2rem;
-        }
-        
-        .job-period {
-            color: #666;
-            font-style: italic;
-        }
-        
-        .job-company {
-            color: #1a237e;
+
+        h1 {
+            font-size: 2.8rem;
             font-weight: 600;
-            margin-bottom: 5px;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: #0f172a;
+            line-height: 1.2;
         }
-        
-        .job-achievements {
-            margin-top: 15px;
-            padding-left: 20px;
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+            color: #475569;
+            font-size: 1rem;
         }
-        
-        .job-achievements li {
+
+        .contact a {
+            color: #1e293b;
+            text-decoration: none;
+            border-bottom: 1px dotted #94a3b8;
+        }
+
+        .contact a:hover {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+        }
+
+        .title {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            color: #334155;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #0f172a;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+
+        .company-block {
+            margin-bottom: 32px;
+        }
+
+        .company-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
             margin-bottom: 8px;
         }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
+
+        .company-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #0f172a;
         }
-        
-        .skill-category {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
+
+        .company-meta {
+            font-weight: 500;
+            color: #4b5563;
         }
-        
-        .skill-category h3 {
-            color: #1a237e;
-            margin-bottom: 10px;
+
+        .role {
+            font-weight: 600;
+            color: #2563eb;
+            margin: 6px 0 12px 0;
             font-size: 1.1rem;
         }
-        
-        .education-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
+
+        .context {
+            background-color: #f8fafc;
+            padding: 16px 20px;
+            border-radius: 16px;
+            margin: 16px 0;
+            color: #334155;
+            border-left: 4px solid #2563eb;
         }
-        
-        .education-year {
-            display: inline-block;
-            background-color: #1a237e;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
+
+        .subsection {
+            margin: 20px 0 12px 0;
+            font-weight: 600;
+            color: #0f172a;
+            font-size: 1.1rem;
         }
-        
-        .language-level {
-            display: flex;
-            justify-content: space-between;
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 16px;
+        }
+
+        li {
             margin-bottom: 10px;
+            padding-left: 24px;
+            position: relative;
         }
-        
-        .language-name {
+
+        li::before {
+            content: "▹";
+            position: absolute;
+            left: 4px;
+            color: #2563eb;
             font-weight: 600;
         }
-        
-        .level-bar {
-            height: 8px;
-            background-color: #e0e0e0;
-            border-radius: 4px;
-            margin-top: 5px;
-            overflow: hidden;
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 32px;
+            margin: 20px 0;
         }
-        
-        .level-fill {
-            height: 100%;
-            background-color: #283593;
+
+        .skills-col {
+            flex: 1 1 250px;
         }
-        
-        .about-me {
-            font-style: italic;
-            color: #555;
+
+        .skills-col strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .skills-col span {
+            color: #334155;
             line-height: 1.8;
         }
-        
-        .highlight {
-            color: #1a237e;
-            font-weight: 600;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #666;
+
+        .badge {
+            background-color: #eef2ff;
+            color: #2563eb;
+            padding: 4px 12px;
+            border-radius: 40px;
             font-size: 0.9rem;
-            border-top: 1px solid #eee;
-            margin-top: 40px;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 8px;
         }
-        
-        /* Адаптивность */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .profile-photo-container {
-                margin-left: 0;
-                margin-bottom: 25px;
-                order: -1;
-            }
-            
-            .profile-info h1 {
-                font-size: 2rem;
-            }
-            
-            .profile-photo {
-                width: 160px;
-                height: 160px;
-            }
-            
-            section {
-                padding: 20px;
-            }
-            
-            .job-header {
-                flex-direction: column;
-            }
-            
-            .job-period {
-                margin-top: 5px;
-            }
+
+        .footer-note {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+            color: #64748b;
+            text-align: center;
         }
-        
-        @media (max-width: 480px) {
-            .profile-photo {
-                width: 140px;
-                height: 140px;
-            }
-            
-            .profile-info h1 {
-                font-size: 1.8rem;
-            }
-            
-            .profile-info h2 {
-                font-size: 1.3rem;
-            }
-            
-            .contact-info {
-                padding: 15px;
-            }
-            
-            section h2 {
-                font-size: 1.5rem;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 12px;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #1d4ed8;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="profile-info">
-                    <h1>Ануфриенко Олег Дмитриевич</h1>
-                    <h2>Product Lead / CPO</h2>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +7 (926) 396-55-73</p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:oleg.anufriyenko@phystech.edu">oleg.anufriyenko@phystech.edu</a></p>
-                        <p><i class="fab fa-telegram"></i> <a href="https://t.me/odanufrienko" target="_blank">Telegram: @odanufrienko</a></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Москва, Россия</p>
-                        <p><i class="fas fa-briefcase"></i> Готов к редким командировкам</p>
-                    </div>
-                </div>
-                
-                <div class="profile-photo-container">
-                    <!-- ВАШЕ РЕАЛЬНОЕ ФОТО -->
-                    <img src="images/photo.jpg" 
-                         alt="Ануфриенко Олег Дмитриевич" 
-                         class="profile-photo">
-                </div>
+<div class="container">
+    <!-- Шапка с фото -->
+    <div class="header">
+        <div class="header-left">
+            <h1>Олег Ануфриенко</h1>
+            <div class="contact">
+                <span>+7 (926) 396-55-73</span>
+                <span>📱 <a href="https://t.me/odanufrienko" target="_blank">@odanufrienko</a></span>
+                <span>✉️ <a href="mailto:oleg.anufriyenko@phystech.edu">oleg.anufriyenko@phystech.edu</a></span>
+                <span>📍 Москва · готов к редким командировкам</span>
             </div>
         </div>
-    </header>
-    
-    <main class="container">
-        <section id="experience">
-            <h2><i class="fas fa-briefcase"></i> Опыт работы — 8 лет 6 месяцев</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-company">SberDevices (SaluteDevices)</div>
-                        <div class="job-title">Head of Engagement Sber Home OS</div>
-                    </div>
-                    <div class="job-period">Январь 2022 — настоящее время (4 года 2 месяца)</div>
-                </div>
-                <ul class="job-achievements">
-                    <li>Успешно развил продуктовое подразделение, вносящее ключевой вклад в P&L</li>
-                    <li>Запустил первую в мире уникальную Gamification платформу на ТВ</li>
-                    <li>Внедрил продвинутые data-driven процессы, например, уникальную AI Feedback Platform</li>
-                    <li>Создал ключевую стратегию развития на 3 года вперед</li>
-                    <li>Сформировал несколько независимых продуктовых линий и команд</li>
-                    <li>Снижение затрат на производство контента благодаря Generative AI</li>
-                    <li><span class="highlight">TV&OTT раздел:</span> Увеличил монетизацию рекламы с 20М до 100М+ рублей в год</li>
-                    <li><span class="highlight">VOD&UGC раздел:</span> Повысил ARPU на +50%, привел продукт к абсолютному лидерству по интеграции стриминговых сервисов в России</li>
-                </ul>
-            </div>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-company">SberMarket (Kuper)</div>
-                        <div class="job-title">Product Lead OPS</div>
-                    </div>
-                    <div class="job-period">Август 2020 — Январь 2022 (1 год 6 месяцев)</div>
-                </div>
-                <ul class="job-achievements">
-                    <li>Создал уникальную гибридную WFM систему для управления 20к самозанятых (сборщиков и курьеров): ML прогнозирование спроса и систему управления сменами</li>
-                    <li>Руководил развитием Личного Кабинета партнера в ShopperApp с более чем 30к DAU</li>
-                    <li>Разработал и внедрил технологию Dynamic Limits Payment с более чем 15к заказов в день</li>
-                    <li>Создал FinTech систему для автоматизации еженедельных выплат самозанятым, снижение затрат в 5 раз</li>
-                    <li>Внедрил систему управления бонусными выплатами для самозанятых с объемом ~10% бюджета</li>
-                </ul>
-            </div>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-company">Picvario</div>
-                        <div class="job-title">Senior Product Manager / Head of Sales</div>
-                    </div>
-                    <div class="job-period">Январь 2020 — Август 2020 (8 месяцев)</div>
-                </div>
-                <ul class="job-achievements">
-                    <li>Запустил SaaS платформу с 50+ B2B клиентами</li>
-                    <li>Расширил бизнес в новый спортивный сегмент с 5 ключевыми клиентами</li>
-                    <li>Внедрил уникальные AI функции для получения USP</li>
-                    <li>Привлек более 15 крупных ключевых клиентов с выручкой >150М в год</li>
-                    <li>Запустил B2G направление и партнерство со Сколково</li>
-                </ul>
-            </div>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-company">Open Source NLP AI</div>
-                        <div class="job-title">Product Owner & Product Analyst</div>
-                    </div>
-                    <div class="job-period">Июль 2018 — Январь 2020 (1 год 7 месяцев)</div>
-                </div>
-                <ul class="job-achievements">
-                    <li>Product Analytics на Python</li>
-                    <li>Запустил PaaS платформу, привлек ключевые партнерства</li>
-                </ul>
-            </div>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <div class="job-company">РАН Физический институт им. Лебедева</div>
-                        <div class="job-title">Junior Research Engineer</div>
-                    </div>
-                    <div class="job-period">Сентябрь 2017 — Август 2018 (1 год)</div>
-                </div>
-                <ul class="job-achievements">
-                    <li>Участие в реализации научных проектов в качестве аналитика</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="education">
-            <h2><i class="fas fa-graduation-cap"></i> Образование</h2>
-            
-            <div class="education-item">
-                <span class="education-year">2023</span>
-                <div class="job-title">Доктор философии (PhD)</div>
-                <div class="job-company">Московский университет финансов и права</div>
-                <p>Факультет прикладной экономики</p>
-            </div>
-            
-            <div class="education-item">
-                <span class="education-year">2020</span>
-                <div class="job-title">Магистр наук</div>
-                <div class="job-company">Московский физико-технический институт (МФТИ)</div>
-                <p>Факультет инноваций и высоких технологий</p>
-            </div>
-            
-            <div class="education-item">
-                <span class="education-year">2023</span>
-                <div class="job-title">Advanced Agile & Scrum Sber</div>
-                <div class="job-company">IT Product Development: Scrum methodology</div>
-            </div>
-        </section>
-        
-        <section id="skills">
-            <h2><i class="fas fa-tools"></i> Навыки</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Продуктовый менеджмент</h3>
-                    <p>Product Management</p>
-                    <p>Продуктовая стратегия</p>
-                    <p>Unit-экономика</p>
-                    <p>Продуктовые метрики</p>
-                    <p>Project management</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Технические навыки</h3>
-                    <p>Python</p>
-                    <p>SQL</p>
-                    <p>Data-driven процессы</p>
-                    <p>AI/ML технологии</p>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Языки</h3>
-                    <div class="language-level">
-                        <span class="language-name">Русский</span>
-                        <span>Родной</span>
-                    </div>
-                    <div class="level-bar">
-                        <div class="level-fill" style="width: 100%;"></div>
-                    </div>
-                    
-                    <div class="language-level">
-                        <span class="language-name">Английский</span>
-                        <span>C1 (Продвинутый)</span>
-                    </div>
-                    <div class="level-bar">
-                        <div class="level-fill" style="width: 85%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Дополнительно</h3>
-                    <p>Водительские права категории B</p>
-                    <p>Собственный автомобиль</p>
-                    <p>Готов к редким командировкам</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="about">
-            <h2><i class="fas fa-user"></i> Обо мне</h2>
-            <div class="about-me">
-                <p>Сейчас я руковожу направлением Вовлечения и Удержания пользователей в Sber Home OS.</p>
-                <p>Имею технический бэкграунд и фундаментальное образование. Похоронил с десяток стартапов, но трудности закаляют!</p>
-                <p>Стоял у истоков AI в РФ, работал в лаборатории NLP, когда это еще не было модно. В свободное время пишу диссертацию на тему влияния ИИ на экономику.</p>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>Ануфриенко Олег Дмитриевич • Product Lead / CPO • Москва, Россия</p>
-            <p>Контакты: +7 (926) 396-55-73 • oleg.anufriyenko@phystech.edu • <a href="https://t.me/odanufrienko" target="_blank">Telegram</a></p>
-            <p><i class="fas fa-file-pdf"></i> 
-                <a href="Ануфриенко_Олег_резюме.pdf" target="_blank">Скачать PDF-версию</a>
-            </p>
-            <p>Резюме обновлено: 2026</p>
+        <div class="header-right">
+            <img src="images/photo.jpg" alt="Олег Ануфриенко">
         </div>
-    </footer>
+    </div>
+
+    <div class="title">Product Lead / CPO</div>
+
+    <!-- О себе -->
+    <h2>О себе</h2>
+    <p style="margin-bottom:20px;">Руководитель продукта с техническим бэкграундом (МФТИ). 8+ лет опыта создания и масштабирования цифровых продуктов. Управляю направлением Вовлечения в экосистему умных устройств SberDevices с 5М+ пользователей.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <span class="badge">Построение продуктовой стратегии</span>
+        <span class="badge">Управление P&L</span>
+        <span class="badge">Мультиагентные архитектуры</span>
+        <span class="badge">LLM</span>
+        <span class="badge">Edge ML</span>
+        <span class="badge">Data-driven CJM</span>
+        <span class="badge">Управление командами (50+ чел)</span>
+        <span class="badge">Product-line структура</span>
+    </div>
+    <p class="context">В настоящее время фокусируюсь на трансформации компании к AI-агентной архитектуре, построении лояльного комьюнити через Open Beta, а также системе умных агентов для поддержки пользователей.</p>
+
+    <!-- Опыт работы -->
+    <h2>Опыт работы</h2>
+
+    <!-- SberDevices -->
+    <div class="company-block">
+        <div class="company-header">
+            <span class="company-name">SberDevices (SaluteDevices)</span>
+            <span class="company-meta">январь 2022 — настоящее время · 4 года 3 месяца</span>
+        </div>
+        <div class="role">Head of Engagement</div>
+        <p>Руководство направлением Вовлечения в экосистему SberDevices (Smart TV, Умные Колонки, Smart Home) с 5М+ пользователей. Управляю портфелем продуктов с ключевым вкладом в P&L компании.</p>
+
+        <div class="subsection">Стратегия и управление</div>
+        <ul>
+            <li>Разработал и защитил 3-летнюю стратегию развития продукта, сформировал несколько независимых продуктовых направлений (Media, TV&OTT, Gamification, Community).</li>
+            <li>Выстроил data-driven процессы принятия решений, включая внедрение уникальной ИИ-платформы для сбора и анализа обратной связи пользователей (Feedback Platform).</li>
+            <li>Инициировал и реализую переход к AI-agent based архитектуре устройств.</li>
+        </ul>
+
+        <div class="subsection">Рост бизнес-метрик</div>
+        <ul>
+            <li>Обеспечил 15-кратный рост выручки от Подписок за 3 года.</li>
+            <li>Увеличил доход от рекламы с 20 млн до 100+ млн руб. в год, внедрив новые форматы и процессы.</li>
+            <li>Повысил индекс удовлетворённости пользователей (CSI) с -20 до +40 п.п. в Media направлении.</li>
+            <li>Масштабировал MAU TV&OTT направления с 50k до 1M+ пользователей.</li>
+            <li>Вывел продукт в абсолютные лидеры по интеграции стриминговых сервисов в РФ (ключевые партнёрства с VK Video, Rutube).</li>
+            <li>Увеличил среднее время просмотра на пользователя с 60 до 100+ часов в месяц.</li>
+        </ul>
+
+        <div class="subsection">Инновации</div>
+        <ul>
+            <li>Первым в мире запустил полноценную нативную геймификацию на ТВ-поверхностях.</li>
+            <li>Создал платформу Open Beta, что позволило сформировать лояльное комьюнити и сократить затраты на тестирование почти в два раза.</li>
+            <li>Разрабатываю систему умных агентов (ГигаСправка) для полной автоматизации поддержки и нативной помощи пользователю.</li>
+        </ul>
+    </div>
+
+    <!-- SberMarket -->
+    <div class="company-block">
+        <div class="company-header">
+            <span class="company-name">SberMarket (Kuper)</span>
+            <span class="company-meta">август 2020 — январь 2022 · 1 год 6 месяцев</span>
+        </div>
+        <div class="role">Product Lead OPS</div>
+        <p>Управление портфелем операционных продуктов: логистика, финтех, HR Tech, клиентский сервис. Отвечал за создание и развитие внутренних и внешних инструментов, обеспечивающих работу 20 000+ самозанятых (сборщиков и курьеров) и обработку десятков тысяч заказов ежедневно.</p>
+
+        <div class="subsection">Supply Chain (Логистика)</div>
+        <ul>
+            <li>Внедрил гибридную WFM-систему на базе ML-предсказания спроса и автоматического планирования смен, сократив простой сборщиков и курьеров.</li>
+            <li>Запустил личный кабинет партнёра в ShopperApp (30 000+ DAU), обеспечив прозрачность заказов и выплат.</li>
+            <li>Разработал технологию динамических лимитов на базе Tinkoff API для 15 000+ заказов в день.</li>
+        </ul>
+
+        <div class="subsection">Fintech OPS</div>
+        <ul>
+            <li>Создал систему автоматизации еженедельных выплат самозанятым, снизив операционные затраты в 5 раз.</li>
+            <li>Внедрил систему управления бонусными выплатами (~10% от ФОТ).</li>
+            <li>Оптимизировал процессы валидации платежей, сократив количество ошибок, ручных проверок и фрода.</li>
+        </ul>
+
+        <div class="subsection">HR Tech (Массовый найм)</div>
+        <ul>
+            <li>Снизил стоимость привлечения персонала (CAC) в 1,5 раза за счёт внедрения чат-ботов для рекрутинга (Telegram/WhatsApp).</li>
+            <li>Уменьшил расходы на наставников в 2 раза, запустив пилот онлайн-онбординга и интеграцию с внешним подрядчиком.</li>
+        </ul>
+
+        <div class="subsection">Customer Apps & Care</div>
+        <ul>
+            <li>Запустил сервис по заказу продуктов через SmartTV (~100 заказов в день).</li>
+            <li>Внедрил функцию Speech-to-Text и в течение нескольких месяцев добился роста конверсии использования с 1,5% до 10%.</li>
+            <li>Подключил новый канал коммуникации с клиентами (WhatsApp) и реализовал ряд проектов по оптимизации работы контакт-центра в рамках омниканальной стратегии.</li>
+        </ul>
+    </div>
+
+    <!-- Picvario -->
+    <div class="company-block">
+        <div class="company-header">
+            <span class="company-name">Picvario</span>
+            <span class="company-meta">январь 2020 — август 2020 · 8 месяцев</span>
+        </div>
+        <div class="role">Senior Product Manager</div>
+        <p>Управление развитием B2B-платформы для работы с цифровыми активами (DAM). Отвечал за продукт, а также за коммерческое направление (выход на новые рынки, привлечение клиентов, партнёрства).</p>
+
+        <div class="subsection">Продуктовое развитие</div>
+        <ul>
+            <li>Запустил SaaS-платформу, которая привлекла 50+ B2B-клиентов за первые месяцы.</li>
+            <li>Вывел продукт в новый спортивный сегмент, привлекая 5 ключевых клиентов.</li>
+            <li>Внедрил уникальные AI-функции (автоматическая категоризация, распознавание лиц), ставшие основой конкурентного преимущества (USP) платформы.</li>
+        </ul>
+
+        <div class="subsection">Коммерция и партнёрства</div>
+        <ul>
+            <li>Привлёк 15+ крупных корпоративных клиентов с совокупным годовым доходом >150 млн руб.</li>
+            <li>Открыл направление B2G (госсектор) и провёл первые пилоты.</li>
+            <li>Организовал партнёрство со Сколково, что усилило экспертный статус компании и открыло доступ к налоговым льготам.</li>
+        </ul>
+    </div>
+
+    <!-- IP Pavlov -->
+    <div class="company-block">
+        <div class="company-header">
+            <span class="company-name">IPavlov — Open Source NLP AI</span>
+            <span class="company-meta">июль 2018 — январь 2020 · 1 год 7 месяцев</span>
+        </div>
+        <div class="role">Product Owner & Product Analyst</div>
+        <p>Управление развитием продуктов на базе технологий обработки естественного языка (NLP). Работал на стыке product management и аналитики в одной из первых российских Open Source NLP-лабораторий (ещё до массового развития нейросетей).</p>
+
+        <div class="subsection">Продуктовое развитие</div>
+        <ul>
+            <li>Запустил PaaS-платформу для развёртывания NLP-решений, которая привлекла ключевых партнёров и стала основой для коммерческих внедрений.</li>
+            <li>Участвовал в развитии Open Source NLP-библиотек, что усилило экспертный статус компании в профессиональном сообществе.</li>
+        </ul>
+
+        <div class="subsection">Аналитика и data-driven подход</div>
+        <ul>
+            <li>Проводил анализ продуктовых метрик, выявлял точки роста и помогал командам принимать решения на основе данных.</li>
+            <li>Взаимодействовал с исследовательской командой, помогая транслировать научные результаты в продуктовые гипотезы.</li>
+        </ul>
+
+        <div class="subsection">Фундамент AI-экспертизы</div>
+        <ul>
+            <li>Создавал NLP-продукты своими руками ещё до того, как это стало индустриальным стандартом, что сегодня позволяет глубже понимать возможности и ограничения AI в продуктах.</li>
+        </ul>
+    </div>
+
+    <!-- ФИАН -->
+    <div class="company-block">
+        <div class="company-header">
+            <span class="company-name">RAS Lebedev Physical Institute (ФИАН)</span>
+            <span class="company-meta">сентябрь 2017 — август 2018 · 1 год</span>
+        </div>
+        <div class="role">Junior Research Engineer</div>
+        <p>Участие в научных проектах в роли аналитика, обработка и интерпретация больших массивов данных.</p>
+    </div>
+
+    <!-- Образование и навыки -->
+    <h2>Образование</h2>
+    <ul>
+        <li><strong>Московский физико-технический институт (МФТИ)</strong> — Магистр, факультет инноваций и высоких технологий (2020)</li>
+    </ul>
+
+    <h2>Тесты и экзамены</h2>
+    <ul>
+        <li>Advanced Agile&Scrum, Sber — IT Product Development: Scrum methodology (2023)</li>
+    </ul>
+
+    <h2>Навыки</h2>
+    <div class="skills-grid">
+        <div class="skills-col">
+            <strong>Управление продуктом</strong><br>
+            <span>Продуктовая стратегия · Управление P&L · Юнит-экономика · Продуктовые метрики · A/B тестирование</span>
+        </div>
+        <div class="skills-col">
+            <strong>AI и данные</strong><br>
+            <span>Внедрение AI-решений · Мультиагентные архитектуры · LLM · NLP · Платформы обратной связи · Data-driven CJM</span>
+        </div>
+        <div class="skills-col">
+            <strong>Технические / методологии</strong><br>
+            <span>Python · SQL · Agile (Scrum, Kanban) · OKR</span>
+        </div>
+    </div>
+
+    <div style="margin-top:24px;">
+        <strong>Языки:</strong> Русский (родной) · Английский (C1, продвинутый)
+    </div>
+    <div style="margin-top:12px;">
+        <strong>Водительские права:</strong> Категория B, есть автомобиль
+    </div>
+
+    <!-- Кнопка скачивания PDF -->
+    <div style="text-align: center; margin-top: 32px;">
+        <a href="Ануфриенко Олег CV.pdf" download class="download-btn">📄 Скачать резюме (PDF)</a>
+    </div>
+
+    <div class="footer-note">
+        © Олег Ануфриенко · 2026
+    </div>
+</div>
 </body>
 </html>
